@@ -365,7 +365,7 @@ if(modelInp == "Short"){
 
 }
 
-Ir = (load*1000)/(math.sqrt(3)*Vr*pf);                               //modulus value
+Ir = (load*1000)/(3*Vr*pf);                               //modulus value
 var IrRect = math.complex(Ir*pf, -1*Ir*Math.sin(Math.acos(pf)));     //Ir in Rectangular form
 Vs = math.add(math.multiply(A,Vr),math.multiply(B,math.divide(IrRect, 1000)));     //Vs in KV and Rectangular form
 VsPolar = Vs.toPolar();                                              //Vs in KV and Polar form
