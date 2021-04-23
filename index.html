@@ -330,7 +330,7 @@ if(modelInp == "Short"){
   B = Z;
   C = 0;
   Cap = 0;
-  Xc = len/(Cap*2*Math.PI*freq);
+  Xc = 1/(len*Cap*2*Math.PI*freq);
   charCur = 0;
 
   out2.innerHTML = "[A = D = " +  "1 + 0i" + "] <br> <br> [B = " + B.toString() + "] <br> <br> [C = " + "0 + 0i]";   
@@ -355,9 +355,6 @@ if(modelInp == "Short"){
   var real = gammaL.re;
   var img = gammaL.im;
   var temp = math.complex((Math.sinh(real)*Math.cos(img)).toFixed(8),(Math.cosh(real)*Math.sin(img)).toFixed(8));
-  console.log(gammaL);
-  console.log(Z);
-  console.log(Y);
 
   A = math.complex((Math.cosh(real)*Math.cos(img)).toFixed(8),(Math.sinh(real)*Math.sin(img)).toFixed(8));
   B = math.multiply(Zc, temp);
@@ -380,7 +377,6 @@ VReg = ((VrNL - Vr)/Vr)*100;
 PLoss = (3*(IsPolar.r)*(IsPolar.r)*Rnet)/1000000;                          //PLoss in MW
 den = parseInt(load)+PLoss;
 eta = (load/den)*100;
-
 
 
 out1.innerHTML = "Inductance per phase per km in H/km  <br><br>" +  L.toString();    
