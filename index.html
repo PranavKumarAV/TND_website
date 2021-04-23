@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tnd_next</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baumans">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Clean.css">
+</head>
+
+<body style="color: rgb(255,255,255);background: rgb(0,0,0);"><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js" type="text/javascript"></script>
+    <section class="d-flex flex-column justify-content-around" style="width: 100%;background: url(&quot;assets/img/781845.jpg&quot;) center / cover no-repeat;height: 100vh;border-style: none;border-color: rgb(0,0,0);border-top-style: none;border-top-color: rgb(0,0,0);">
+        <div>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true" id="heading1">Transmission</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750" data-aos-once="true" style="color: #ffffff;font-family: 'Alegreya SC', serif;text-align: center;font-weight: bold;font-size: 70px;"><strong>and</strong></h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true" style="text-align: center;font-family: 'Alegreya SC', serif;color: #ffffff;font-weight: bold;font-size: 70px;"><strong>Distribution</strong></h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="850" data-aos-once="true" id="heading2" style="font-family: 'Alegreya SC', serif;font-weight: normal;color: rgb(255,255,255);text-align: center;font-size: 60px;">Group - Task</h1>
+        </div>
+        <div></div><button class="btn btn-link btn-block" type="button"><i class="icon ion-ios-arrow-down" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200" data-aos-once="true" style="font-size: 40px;"></i></button>
+    </section>
+    <section style="width: 100%;height: 100vh;">
+        <div style="width: 100%;height: 100vh;"><img data-aos="fade-up" data-aos-duration="600" data-aos-delay="600" data-aos-once="true" src="assets/img/image_processing20191203-31735-84xqh7.gif" style="width: 100%;padding: 50px;height: 87vh;">
+            <p data-aos="fade-up" data-aos-duration="500" data-aos-once="true" style="font-family: Baumans, cursive;text-align: center;font-size: 30px;">In this Website with the user input values we find the Inductance, capacitance, A B C D parameters, and some more values.</p>
+        </div>
+    </section>
+    <section>
+        <section class="d-flex flex-column justify-content-end login-dark" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600" data-aos-once="true" style="height: 1800px;">
+            <form method="post" action="#" name="inputdet">
+                <h2 class="sr-only">Login Form</h2>
+                <div class="illustration"><i class="typcn typcn-mortar-board"></i></div>
+                <div class="form-group" style="text-align: center;margin-bottom: 40px;"><label class="text-capitalize" style="text-align: center;font-weight: bold;font-size: 32px;color: rgb(40,128,238);">Enter the Values</label></div>
+                <div class="form-group" style="text-align: center;"><label class="text-capitalize" style="text-align: center;">1. Type of Transmission</label></div>
+                <div class="form-group"><div class="container">
+<div class="form-row">
+<div class="col-md-6">
+<div class="form-check" style="text-align: center;"><input type="radio" id="typeSys" name="type" value="Symmetrical" required><label class="form-check-label" for="formCheck-1">Symmetrical</label></div>
+</div>
+<div class="col-md-6">
+<div class="form-check" style="text-align: center;"><input type="radio" id="typeSys" name="type" value="Unsymmetrical"><label class="form-check-label" for="formCheck-2">Unsymmetrical</label></div>
+                            </div>
+                        </div>
+                    </div></div>
+                <div class="form-group" style="text-align: center;"><label style="height: 24px;margin-bottom: 0px;margin-top: 15px;">2. Spacing Between Phase Conductors</label></div>
+                <div class="form-group">
+                    <div class="container">
+                        <div class="form-row">
+                            <div class="col-md-4"><input class="form-control" type="text" placeholder="Between a b (m)" style="padding: 0;text-align: center;" id="spaceA" required></div>
+                            <div class="col-md-4"><input class="form-control" type="text" placeholder="Between b c (m)" style="padding: 0;text-align: center;" id="spaceB" required></div>
+                            <div class="col-md-4"><input class="form-control" type="text" placeholder="Between c a (m)" style="padding: 0;text-align: center;" id="spaceC" required></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" style="text-align: center;"><label style="margin-top: 15px;margin-bottom: 0;">3. Number of sub-conductors per bundle </label></div>
+                <div class="form-group"><input class="form-control" type="text" placeholder="Enter the number" style="padding: 0;text-align: center;" id="numSub" required></div>
+                <div class="form-group" style="text-align: center;"><label style="margin-top: 15px;margin-bottom: 0;">4. Spacing between the sub-conductors </label></div>
+                <div class="form-group"><input class="form-control" type="text" placeholder="Enter the number (cm)" style="padding: 0;text-align: center;" id="spaceSub"required></div>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 0;">5. Number of strands in each sub conductor</label></div>
+                <div class="form-group" style="text-align: center;"><input class="form-control" type="text" placeholder="Enter the number" style="padding: 0;text-align: center;" id="numStand" required></div>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 0;">6. Diameter of each strand </label></div>
+                <div class="form-group"><input class="form-control" type="text" placeholder="Enter the number (cm)" style="padding: 0;text-align: center;" id="diaStrand" required></div>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 0;">7. Length of the line in km </label></div>
+                <div class="form-group"><input class="form-control" type="text" placeholder="Enter the number (Km)" style="padding: 0;text-align: center;" id="len" required></div>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 16px;">8. Model of the line</label></div>
+                <div class="form-group"><div class="container">
+<div class="form-row">
+<div class="col-md-4">
+<div class="form-check" style="text-align: center;"><input class="form-check-input" type="radio" id="model" name="model" value="Short" required><label class="form-check-label" for="formCheck-3">Short</label></div>
+</div>
+<div class="col-md-4">
+<div class="form-check" style="text-align: center;"><input class="form-check-input" type="radio" id="model" name="model" value="NominalPi"><label class="form-check-label" for="formCheck-3">Nominal&nbsp;<i class="typcn typcn-pi"></i></label></div>
+</div>
+<div class="col-md-4">
+<div class="form-check" style="text-align: center;"><input class="form-check-input" type="radio" id="model" name="model" value="Long"><label class="form-check-label" for="formCheck-3">Long</label></div>
+</div>
+</div>
+</div></div>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 0;">9. Resistance of the line per km </label></div>
+                <div class="form-group"><input class="form-control" type="text" placeholder="Enter the number (Ω)" style="padding: 0;text-align: center;" id="R" required></div>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 0;">10. Power Frequency </label><input class="form-control" type="text" placeholder="Enter the number (Hz)" style="padding: 0;text-align: center;" id="freq" required></div>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 0;">11. Nominal System Voltage</label></div><input class="form-control" type="text" placeholder="Enter the number (KV)" style="padding: 0;text-align: center;" id="V" required>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 0;">12. Receiving end load</label></div><input class="form-control" type="text" placeholder="Enter the number (MW)" style="padding: 0;text-align: center;" id="load" required>
+                <div class="form-group" style="text-align: center;margin-bottom: 0;"><label style="text-align: center;margin-top: 15px;margin-bottom: 0;">13. Power factor of the receiving end load</label></div><input class="form-control" type="text" placeholder="Enter the number" style="padding: 0;text-align: center;" id="pf" required title="Between 0-1" ><button class="btn btn-primary btn-block" type="submit" onclick="validate_form()">Submit</button>
+            </form>
+            <div id="lxl2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 d-flex flex-row justify-content-center align-items-center">
+                            <h5>Click here to&nbsp;<a href="Report.html" style="color: rgb(0,25,255);border-bottom-width: 0px;border-bottom-color: rgb(255,255,255);" target="_blank">Download Report</a></h5>
+                        </div>
+                        <div class="col-md-6"><button class="btn btn-link btn-block" id="btnnn-3" type="button" style="padding: 3%;font-size: 30px;"><i class="icon ion-ios-arrow-down" id="liill-3" style="font-size: 40px;"></i></button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div id="lxl" style="background: #000000;border-color: rgb(255,255,255);">
+        <section class="d-flex flex-column justify-content-between" style="width: 100%;height: 100vh;">
+            <h1 id="lii" style="text-align: center;margin-top: 8px;font-size: 50px;margin-bottom: 0;padding-top: 3%;">Output Values</h1>
+            <h1 class="display-4" style="text-align: center;">Part - 1</h1>
+            <section class="d-flex flex-column justify-content-end" id="liil" style="background: url(&quot;assets/img/wallpaperflare.com_wallpaper.jpg&quot;) center / cover no-repeat;transform: perspective(0px) translate(0px);border-radius: 20%;border-color: rgb(0,0,0);margin: 5%;margin-bottom: 0;margin-top: 2%;height: 50vh;">
+                <h1 class="text-center d-flex flex-column flex-fill justify-content-around" id="out1" style="text-align: center;font-size: 30px;margin-bottom: 0px;"></h1>
+                <div class="btn-toolbar d-flex flex-column justify-content-end align-content-end align-self-end" style="margin-right: 5%;margin-bottom: 2%;">
+                    <div class="btn-group" role="group" style="text-align: right;"><button class="btn btn-primary bg-dark" type="button" onclick="left1()" style="border-radius: 30%;border-color: rgb(0,0,0);"><i class="material-icons" id="left1" style="font-size: 40px;">chevron_left</i></button><button class="btn btn-primary bg-dark" type="button" onclick="right1()" style="border-radius: 30%;border-color: rgb(0,0,0);"><i class="material-icons" id="right1" style="font-size: 40px;">navigate_next</i></button></div>
+                </div>
+            </section>
+            <div><button class="btn btn-link btn-block" id="btnnn" type="button" style="padding: 3%;font-size: 30px;"><i class="icon ion-ios-arrow-down" id="liill" style="font-size: 40px;"></i></button></div>
+        </section>
+        <section class="d-flex flex-column justify-content-between" style="width: 100%;height: 100vh;">
+            <h1 class="display-4" style="text-align: center;">Part - 2</h1>
+            <section class="d-flex flex-column justify-content-end" id="liil" style="transform: perspective(0px) translate(0px);border-radius: 20%;border-color: rgb(0,0,0);margin: 5%;margin-bottom: 0;margin-top: 2%;height: 50vh;background: url(&quot;assets/img/anime-landscape-digital-art-wallpaper-preview.jpg&quot;) center / cover no-repeat;">
+                <h1 class="text-center d-flex flex-column flex-fill justify-content-around" id="out2" style="text-align: center;font-size: 30px;margin-bottom: 0px;"></h1>
+                <div class="btn-toolbar d-flex flex-column justify-content-end align-content-end align-self-end" style="margin-right: 5%;margin-bottom: 2%;">
+                    <div class="btn-group" role="group" style="text-align: right;"><button class="btn btn-primary bg-dark" type="button" onclick="left2()" style="border-radius: 30%;border-color: rgb(0,0,0);"><i class="material-icons" style="font-size: 40px;">chevron_left</i></button><button class="btn btn-primary bg-dark" type="button" onclick="right2()" style="border-radius: 30%;border-color: rgb(0,0,0);"><i class="material-icons" style="font-size: 40px;">navigate_next</i></button></div>
+                </div>
+            </section>
+            <div><button class="btn btn-link btn-block" id="btnnn-2" type="button" style="padding: 3%;font-size: 30px;"><i class="icon ion-ios-arrow-down" id="liill-2" style="font-size: 40px;"></i></button></div>
+        </section>
+        <section style="width: 100%;height: 100vh;background: rgba(255,255,255,0);">
+            <h1 class="display-4" style="text-align: center;margin: 2%;margin-bottom: 2%;margin-top: 0px;">Part - 3</h1>
+            <section class="d-flex flex-column" id="liil-1" style="transform: perspective(0px) translate(0px);border-radius: 20%;margin: 5%;margin-bottom: 0;height: 50vh;border-color: rgb(255,255,255);width: 90%;margin-top: 0px;">
+                <div style="height: 60vh;margin: 0;">
+                    <div class="container d-flex flex-row" style="height: 618px;">
+                        <h1 class="d-flex flex-column flex-shrink-1 justify-content-center align-items-center align-content-center" id="part3Topic" style="width: 20%;"><br>Sending end Circle Diagram<br><br><br> <br> <br> <br> <br></h1>
+                        <div class="row d-flex flex-grow-1 justify-content-center" style="margin: 0px;">
+                            <div class="col" style="padding: 0px;">
+                                <div id="canv1">
+                                    <div class="col-md-12"> <center>
+         <canvas id="grid1" width=610 height=610 style="border:1px solid #FF1300; background-color:black;"></canvas>
+    </center></div>
+                                </div>
+                                <div id="canv2">
+                                    <div class="col-md-12"> <center>
+         <canvas id="grid2" width=610 height=610 style="border:1px solid #FF1300; background-color:black;"></canvas>
+    </center></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-shrink-1">
+                            <h6 class="d-flex flex-shrink-1"><strong><span style="text-decoration: underline;">Label:</span></strong><br>X-AXIS - P(in W)<br>Y-AXIS - Q(in VAR)&nbsp;<br></h6>
+                            <h6><strong><span style="text-decoration: underline;">Scale:</span></strong></h6>
+                            <h6 class="d-flex flex-column flex-shrink-1" id="powNot">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 unit = 10^(7)</h6>
+                            <div class="btn-toolbar d-flex flex-column flex-shrink-1 flex-fill justify-content-end align-content-end" style="margin-right: 5%;margin-bottom: 0px;margin-top: 0;">
+                                <div class="btn-group" role="group" style="text-align: right;"><button class="btn btn-primary bg-dark" type="button" onclick="left3()" style="border-radius: 30%;border-color: rgb(0,0,0);"><i class="material-icons" style="font-size: 40px;">chevron_left</i></button><button class="btn btn-primary bg-dark" type="button" onclick="right3()" style="border-radius: 30%;border-color: rgb(0,0,0);"><i class="material-icons" style="font-size: 40px;">navigate_next</i></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div><button class="btn btn-link btn-block" id="btnnn-1" type="button" style="padding: 3%;font-size: 30px;"><i class="icon ion-ios-arrow-down" id="liill-1" style="font-size: 40px;"></i></button></div>
+        </section>
+        <div id="onlyshort">
+            <section class="d-flex flex-column justify-content-between" style="width: 100%;height: 100vh;">
+                <h1 class="display-4" style="text-align: center;">Part - 4</h1>
+                <section class="d-flex flex-column justify-content-end" id="liil-4" style="transform: perspective(0px) translate(0px);border-radius: 20%;border-color: rgb(0,0,0);margin: 5%;margin-bottom: 0;margin-top: 2%;height: 50vh;background: url(&quot;assets/img/anime-landscape-digital-art-wallpaper-preview.jpg&quot;) center / cover no-repeat;">
+                    <h1 class="text-center d-flex flex-column flex-fill justify-content-around" id="out4" style="text-align: center;font-size: 30px;margin-bottom: 0px;"></h1>
+                    <div class="btn-toolbar d-flex flex-column justify-content-end align-content-end align-self-end" style="margin-right: 5%;margin-bottom: 2%;">
+                        <div class="btn-group" role="group" style="text-align: right;"><button class="btn btn-primary bg-dark" type="button" onclick="left4()" style="border-radius: 30%;border-color: rgb(0,0,0);"><i class="material-icons" style="font-size: 40px;">chevron_left</i></button><button class="btn btn-primary bg-dark" type="button" onclick="right4()" style="border-radius: 30%;border-color: rgb(0,0,0);"><i class="material-icons" style="font-size: 40px;">navigate_next</i></button></div>
+                    </div>
+                </section>
+                <div><button class="btn btn-link btn-block" type="button"><i class="icon ion-ios-arrow-down" style="font-size: 40px;"></i></button></div>
+            </section>
+        </div>
+        <section class="d-flex flex-column justify-content-between team-clean" style="background: rgb(0,0,0);width: 100%;height: 100vh;">
+            <div class="intro">
+                <h2 class="text-center" style="color: rgb(255,255,255);">Team </h2>
+            </div>
+            <div class="container" style="padding: 0px;width: 100%;">
+                <div class="row" style="margin: 0px;width: 100%;">
+                    <div class="col-md-12 d-flex justify-content-center" style="padding: 0px;width: 100%;"><img src="assets/img/6c7ee0e7-4a92-44cf-8ad5-0708445d9026.jpg" style="width: 50%;height: 50vh;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row people">
+                            <div class="col-md-6 col-lg-4 item">
+                                <h3 class="name" style="color: rgb(136,136,136);">Prethivan B</h3>
+                                <p class="title" style="font-size: 20px;">107119093</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 item">
+                                <h3 class="name" style="color: rgb(136,136,136);">Pranav Kumar A V</h3>
+                                <p class="title" style="font-size: 20px;">107119091</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 item">
+                                <h3 class="name" style="color: rgb(136,136,136);">Muhilan R</h3>
+                                <p class="title" style="font-size: 20px;">107119073</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="d-flex justify-content-center" style="color: rgb(255,255,255);">Made with&nbsp;<i class="la la-heart" style="color: var(--red);"></i></h1>
+            </div>
+        </section>
+    </div><script>
+var hidden = document.getElementById("lxl");
+var btn = document.getElementById("lxl2");
+var onlyshort = document.getElementById("onlyshort");
+onlyshort.style.display = btn.style.display = hidden.style.display = "none";
+var canv1 = document.getElementById("canv1");
+var canv2 = document.getElementById("canv2");
+canv2.style.display = "none";
+var btn1 = 0;
+var btn2 = 0;
+var btn3 = 0;
+var L;
+var Cap;
+var Xl;
+var Xc;
+var charCur;
+var A;
+var APolar;
+var BPolar;
+var B;
+var C;
+var Y;
+var Z;
+var Ir;
+var VsPolar;
+var IsPolar;
+var Vs;
+var Vr;
+var Is;
+var pf;
+var load;
+var VReg;
+var PLoss;
+var eta;
+var out1 = document.getElementById("out1");
+var out2 = document.getElementById("out2");
+var part3Topic = document.getElementById("part3Topic");
+var powNot = document.getElementById("powNot");
+var out4 = document.getElementById("out4");
+var needed;
+var cnv = document.getElementById("grid1");
+var cnv1 = document.getElementById("grid2");
+var cenX;
+var cenY;
+var ang;
+var rad; 
+var RAD;
+var XX;
+var YY;
+var pow;
+var comment;
+
+
+function validate_form()
+{
+    var model = document.getElementsByName('model');
+    var modelInp; 
+    for(i = 0; i < model.length; i++) {
+    if(model[i].checked){
+    modelInp = model[i].value;
+    }
+}
+
+        if (( document.inputdet.spaceA.value != "" && document.inputdet.spaceB.value != "" && document.inputdet.spaceC.value != "" && document.inputdet.numSub.value != "" &&
+             document.inputdet.spaceSub.value != "" && document.inputdet.numStand.value != "" && document.inputdet.diaStrand.value != "" && document.inputdet.len.value != "" && document.inputdet.R.value != "" && document.inputdet.freq.value != "" && document.inputdet.V.value != "" && document.inputdet.load.value != "" && 
+             document.inputdet.pf.value != "" ) && ( document.inputdet.type[0].checked == true || document.inputdet.type[1].checked == true ) && (document.inputdet.model[0].checked == true || document.inputdet.model[1].checked == true || document.inputdet.model[2].checked == true ))
+        {
+                event.preventDefault();
+                btn.style.display = hidden.style.display = "block";
+                if (modelInp == "Short")
+                {
+                    onlyshort.style.display = "block";
+                }
+        }
+
+
+var spaceA = document.getElementById("spaceA").value;
+var spaceB = document.getElementById("spaceB").value;
+var spaceC = document.getElementById("spaceC").value;
+var numSub = document.getElementById("numSub").value;
+var spaceSub = document.getElementById("spaceSub").value;
+var numStand = document.getElementById("numStand").value;
+var diaStrand = document.getElementById("diaStrand").value;
+var len = document.getElementById("len").value;
+var R = document.getElementById("R").value;
+var freq = document.getElementById("freq").value;
+Vr = document.getElementById("V").value;
+load = document.getElementById("load").value;
+pf = document.getElementById("pf").value;
+var VrNL;
+var Rnet = R*len;
+
+
+var numLayers = (3 + ((12*(numStand)-3)**(0.5)))/6;
+var diasub = (2*numLayers-1)*diaStrand;
+
+
+var MGMD = (spaceA*spaceB*spaceC)**(1/3);
+
+
+var indSGMDa = 0.7788*(diasub/2)*(spaceSub);
+var temp1 = spaceSub;
+for (i = 0; i < numSub-2; i++) {
+  var theta = Math.PI*(numSub-2-i)/numSub;                 //(180*(numSub-2-i)/numSub)*(Math.PI/180)
+  var temp2 = ((temp1)**2 + (spaceSub)**2 -2*temp1*spaceSub*Math.cos(theta))**(0.5);
+  indSGMDa = indSGMDa * temp2;
+  temp1 = temp2;
+}
+var indSGMD = ((indSGMDa)**(1/numSub))*(10**(-2));
+L = (2*10**(-4))*Math.log(MGMD/indSGMD);
+
+var conSGMD = (indSGMD)/((0.7788)**(1/numSub));
+Cap = (2*Math.PI*8.854*(10**(-9)))/(Math.log(MGMD/conSGMD))
+
+Xl = L*2*Math.PI*freq*len;
+Xc = len/(Cap*2*Math.PI*freq);
+Y = math.complex(0,1/Xc);
+Z = math.complex(Rnet,Xl);
+
+charCur = Vr/Xc;
+         
+
+if(modelInp == "Short"){
+  A = math.complex(1, 0);
+  B = Z;
+  C = 0;
+  Cap = 0;
+  Xc = len/(Cap*2*Math.PI*freq);
+  charCur = 0;
+
+  out2.innerHTML = "[A = D = " +  "1 + 0i" + "] <br> <br> [B = " + B.toString() + "] <br> <br> [C = " + "0 + 0i]";   
+  needed = "[A = D = " +  "1 + 0i" + "] <br> <br> [B = " + B.toString() + "] <br> <br> [C = " + "0 + 0i]"; 
+
+}else if(modelInp == "NominalPi"){
+  var temp = math.multiply(math.multiply(Y,0.5), Z);
+  var temp1 = math.multiply(math.multiply(0.5,Y), temp);
+  var temp2 = math.complex(1, 0);
+
+  A = math.add(temp, temp2);
+  B = Z;
+  C = math.add(temp1, Y);
+
+  out2.innerHTML = "[A = D = " +  A.toString() + "] <br> <br> [B = " + B.toString() + "] <br> <br> [C = " + C.toString() + "]";
+  needed = "[A = D = " +  A.toString() + "] <br> <br> [B = " + B.toString() + "] <br> <br> [C = " + C.toString() + "]";
+
+}else if(modelInp == "Long"){
+
+  var gammaL = math.sqrt(math.multiply(Z, Y));
+  var Zc = math.sqrt(math.divide(Z, Y));
+  var real = gammaL.re;
+  var img = gammaL.im;
+  var temp = math.complex((Math.sinh(real)*Math.cos(img)).toFixed(8),(Math.cosh(real)*Math.sin(img)).toFixed(8));
+
+  A = math.complex((Math.cosh(real)*Math.cos(img)).toFixed(8),(Math.sinh(real)*Math.sin(img)).toFixed(8));
+  B = math.multiply(Zc, temp);
+  C = math.divide(temp, Zc);
+
+  out2.innerHTML = "[A = D = " +  A.toString() + "] <br> <br> [B = " + B.toString() + "] <br> <br> [C = " + C.toString() + "]";
+  needed = "[A = D = " +  A.toString() + "] <br> <br> [B = " + B.toString() + "] <br> <br> [C = " + C.toString() + "]";
+
+}
+
+Ir = (load*1000)/(math.sqrt(3)*Vr*pf);                               //modulus value
+var IrRect = math.complex(Ir*pf, -1*Ir*Math.sin(Math.acos(pf)));     //Ir in Rectangular form
+Vr = Vr/math.sqrt(3);											     //Converting Vr to Phase Voltage
+Vs = math.add(math.multiply(A,Vr),math.multiply(B,math.divide(IrRect, 1000)));     //Vs in KV and Rectangular form
+VsPolar = Vs.toPolar();                                              //Vs in KV and Polar form
+Is = math.add(math.multiply(C,Vr*1000),math.multiply(A,IrRect));     //Is in A and Rectangular form
+IsPolar = Is.toPolar();                                              //Is in A and Polar form
+APolar = A.toPolar();
+VrNL = (VsPolar.r)/(APolar.r);                                    //VrNL in KV and Polar form     
+VReg = ((VrNL - Vr)/Vr)*100;
+PLoss = (3*(IsPolar.r)*(IsPolar.r)*R)/1000;                          //PLoss in KW
+eta = ((load*1000)/(load*1000+PLoss))*100;
+
+
+out1.innerHTML = "Inductance per phase per km in H/km  <br><br>" +  L.toString();    
+part3Topic.innerHTML = "Sending end Circle Diagram";
+
+var ctx = cnv.getContext("2d");
+BPolar = B.toPolar(); 
+rad =((VsPolar.r)*(Vr))/(BPolar.r);            //Actual radius
+ang = (BPolar.phi-APolar.phi)*(180/Math.PI);
+cenX = (APolar.r*VsPolar.r*VsPolar.r*Math.cos(ang))/BPolar.r;
+cenY = (APolar.r*VsPolar.r*VsPolar.r*Math.sin(ang))/BPolar.r;
+
+var cenXS = cenX;
+var cenYS = cenY;
+var cenXR = (-1*APolar.r*Vr*Vr*Math.cos(ang))/BPolar.r;
+var cenYR = (-1*APolar.r*Vr*Vr*Math.sin(ang))/BPolar.r;
+var Q = math.sqrt(rad*rad - (load/3 - cenXR)**2) + cenYR;
+var Qnet = (load/3)*Math.tan(Math.acos(pf)) - Q;
+
+if(Qnet > 0){
+	comment = "Series Inductors can be used for compensation.";
+}else if(Qnet == 0){
+	comment = "No compensation required.";
+}else{
+	comment = "Series Capacitors can be used for compensation.";
+}
+out4.innerHTML = "Comment on the compensation requirement : <br><br>" + comment;
+dispGraph(ctx, rad, cenX, cenY);
+powNot.innerHTML = "           1 unit = 10^(" + (6+pow).toString() + ")";
+
+if(modelInp == "Short"){
+    var tosend = [L.toString(),Cap.toString(),(Xl.toFixed(3)).toString(),(Xc.toFixed(3)).toString(),charCur.toString(),(((VsPolar.r).toFixed(3))*math.sqrt(3)).toString(),
+              ((IsPolar.r).toFixed(3)).toString(),(VReg.toFixed(3)).toString(),(PLoss.toFixed(3)).toString(),(eta.toFixed(3)).toString(),A.toString(),B.toString(),C.toString(),rad,cenXS,cenYS,cenXR,cenYR,1,Qnet,comment];
+}else{
+    var tosend = [L.toString(),Cap.toString(),(Xl.toFixed(3)).toString(),(Xc.toFixed(3)).toString(),charCur.toString(),(((VsPolar.r).toFixed(3))*math.sqrt(3)).toString(),
+              ((IsPolar.r).toFixed(3)).toString(),(VReg.toFixed(3)).toString(),(PLoss.toFixed(3)).toString(),(eta.toFixed(3)).toString(),A.toString(),B.toString(),C.toString(),rad,cenXS,cenYS,cenXR,cenYR,0];
+}
+
+
+
+localStorage.setItem("sent", JSON.stringify(tosend));
+
+}
+
+
+
+function left1()
+{
+   btn1 = btn1 - 1;
+   if (btn1 < 1){
+        out1.innerHTML = "Inductance per phase per km in H/km  <br><br>" +  L.toString();
+        btn1 = 0;
+    }
+   else if (btn1 == 1){
+        out1.innerHTML = "Capacitance per phase per km in F/km  <br><br>" + Cap.toString();
+   }
+   else if (btn1 == 2){
+        out1.innerHTML = "Inductive reactance of the line in Ohm  <br><br>" + (Xl.toFixed(3)).toString();
+   }
+   else if (btn1 == 3){
+        out1.innerHTML = "Capacitive reactance of the line in Ohm  <br><br>" + (Xc.toFixed(3)).toString();
+   }
+   else if (btn1 == 4){
+        out1.innerHTML = "Charging current in A  <br><br>" + charCur.toString();
+   }
+}
+function right1()
+{
+   btn1 = btn1 + 1;
+   if (btn1 < 1){
+        out1.innerHTML = "Inductance per phase per km in H/km  <br><br>" +  L.toString();
+        }
+   else if (btn1 ==1){
+        out1.innerHTML = "Capacitance per phase per km in F/km  <br><br>" + Cap.toString();
+   }
+   else if (btn1 ==2){
+        out1.innerHTML = "Inductive reactance of the line in Ohm  <br><br>" + (Xl.toFixed(3)).toString();
+   }
+   else if (btn1 ==3){
+        out1.innerHTML = "Capacitive reactance of the line in Ohm  <br><br>" + (Xc.toFixed(3)).toString();
+   }
+   else if (btn1 > 3){
+        out1.innerHTML = "Charging current in A  <br><br>" + charCur.toString();
+        btn1 = 4;
+   }
+}
+
+function left2()
+{
+   btn2 = btn2 - 1;
+   if (btn2 < 1){
+        btn2 = 0;
+        out2.innerHTML = needed;
+    }
+   else if (btn2 == 1){
+        out2.innerHTML = "Sending end voltage in kV  <br><br>" + (((VsPolar.r).toFixed(3))*math.sqrt(3)).toString();
+   }
+   else if (btn2 == 2){
+        out2.innerHTML = "Sending end current in A  <br><br>" + ((IsPolar.r).toFixed(3)).toString();
+   }
+   else if (btn2 == 3){
+        out2.innerHTML = "Percentage Voltage Regulation  <br><br>" + (VReg.toFixed(3)).toString();
+   }
+   else if (btn2 == 4){
+        out2.innerHTML = "Power loss in the line in MW  <br><br>" + (PLoss.toFixed(3)).toString();
+   }
+   else if (btn2 == 5){
+        out2.innerHTML = "Transmission Efficiency in %  <br><br>" + (eta.toFixed(3)).toString();
+   }
+}
+function right2()
+{
+   btn2 = btn2 + 1;
+   if (btn2 == 1){
+        out2.innerHTML = "Sending end voltage in kV  <br><br>" + (((VsPolar.r).toFixed(3))*math.sqrt(3)).toString();
+   }
+   else if (btn2 == 2){
+        out2.innerHTML = "Sending end current in A  <br><br>" + ((IsPolar.r).toFixed(3)).toString();
+   }
+   else if (btn2 == 3){
+        out2.innerHTML = "Percentage Voltage Regulation  <br><br>" + (VReg.toFixed(3)).toString();
+   }
+   else if (btn2 == 4){
+        out2.innerHTML = "Power loss in the line in MW  <br><br>" + (PLoss.toFixed(3)).toString();
+   }
+   else if (btn2 > 4){
+        out2.innerHTML = "Transmission Efficiency in %  <br><br>" + (eta.toFixed(3)).toString();
+        btn2 = 5;
+   }
+}
+
+function left3()
+{
+		part3Topic.innerHTML = "Sending end Circle Diagram";
+		
+        canv1.style.display = "block";
+        canv2.style.display = "none";
+        var ctx = cnv.getContext("2d");
+        rad = ((VsPolar.r)*(Vr))/(BPolar.r);            //Actual radius
+        cenX = (APolar.r*VsPolar.r*VsPolar.r*Math.cos(ang))/BPolar.r;
+        cenY = (APolar.r*VsPolar.r*VsPolar.r*Math.sin(ang))/BPolar.r;
+
+        dispGraph(ctx, rad, cenX, cenY);
+        powNot.innerHTML = "           1 unit = 10^(" + (6+pow).toString() + ")";
+}
+function right3()
+{
+		part3Topic.innerHTML = "Receiving end Circle Diagram";
+		
+        canv1.style.display = "none";
+        canv2.style.display = "block";
+        var ctx = cnv1.getContext("2d");
+        rad = ((VsPolar.r)*(Vr))/(BPolar.r);            //Actual radius
+        cenX = (-1*APolar.r*Vr*Vr*Math.cos(ang))/BPolar.r;
+        cenY = (-1*APolar.r*Vr*Vr*Math.sin(ang))/BPolar.r;
+
+        dispGraph(ctx, rad, cenX, cenY);
+        powNot.innerHTML = "           1 unit = 10^(" + (6+pow).toString() + ")";
+}
+
+function left4()
+{
+        out4.innerHTML = "Comment on the compensation requirement  <br><br>" + comment;
+}
+function right4()
+{
+        var rad = ((VsPolar.r)*(Vr))/(BPolar.r);            //Actual radius
+        var cenX = (-1*APolar.r*Vr*Vr*Math.cos(ang))/BPolar.r;
+        var cenY = (-1*APolar.r*Vr*Vr*Math.sin(ang))/BPolar.r;  
+        var Q = math.sqrt(rad*rad - (load/3 - cenX)**2) + cenY;
+        var Qnet = (load/3)*Math.tan(Math.acos(pf)) - Q;
+        out4.innerHTML = "Amount of compensation required in MVar  <br><br>" + Qnet.toString();
+}
+
+function dispGraph(ctx, rad, cenX, cenY){
+ctx.clearRect(0, 0, cnv.width, cnv.height);
+ctx.fillStyle = "white";                      
+                        
+ctx.beginPath();
+ctx.lineWidth = 1;
+    ctx.moveTo(5,305);
+    ctx.lineTo(605,305);
+                
+            
+                
+    ctx.moveTo(305,5);
+    ctx.lineTo(305,605);
+                          
+ctx.beginPath();
+ctx.lineWidth = 1;
+for(var i=5; i<=605; i=i+30)
+            
+{
+        ctx.moveTo(i,5);
+        ctx.lineTo(i,605);
+                    
+        ctx.moveTo(5,i);
+        ctx.lineTo(605,i);          
+            
+} 
+                           
+             
+for(var i=5; i<=605; i=i+30)
+    {
+         ctx.moveTo(i,302);
+         ctx.lineTo(i,307); 
+                     
+         ctx.moveTo(302,i);
+         ctx.lineTo(307,i);
+                     
+         ctx.fillText(((i-5)/30)-10,i-5,315);
+         ctx.fillText(-((i-5)/30)+10,307,i+5);
+         
+     }
+            
+ctx.strokeStyle="#FF1300";
+ctx.stroke();
+              
+            
+ctx.beginPath();
+ctx.lineWidth = 5; 
+
+RAD = rad.toFixed(3);                          //Radius with respect to axis
+pow = 0;
+while (RAD > 10) {
+  RAD = RAD/10;
+  cenX = cenX/10;
+  cenY = cenY/10;
+  pow +=1;
+}
+
+RAD = (RAD)*30;                               //since 1 unit in graph = 30 units in webpage
+XX = 305 + cenX*30;
+YY = 305 - cenY*30;
+    
+ctx.arc(XX, YY, RAD, 0, 2 * Math.PI);
+ctx.stroke();
+	
+}
+
+</script><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>

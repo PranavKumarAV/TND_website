@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Report</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section class="d-flex flex-column align-items-center align-content-center m-auto" style="height: 297mm;width: 210mm;">
+        <h1 class="text-center d-flex flex-column align-items-center" style="padding: 39.6719px;margin: 39.6719px;font-size: 70px;padding-left: 15.8594px;margin-top: 0px;">TRANSMISSION AND DISTRIBUTION OF ELECTRICAL ENERGY<br></h1>
+        <h1 class="d-flex flex-column align-items-center" style="margin: 39.6719px;padding: 39.6719px;font-size: 60px;">GROUP TASK<br></h1>
+        <h1 class="d-flex flex-column align-items-center" style="padding: 15.8594px;font-size: 60px;margin: 15.8594px;margin-top: 23.79px;padding-top: 39.6719px;">Report</h1>
+        <div style="margin-top: 100px;">
+            <h1 class="d-flex flex-column align-items-center" style="margin: 8.875px;padding: 0.6719px;font-size: 50px;">Team members:</h1>
+            <ul>
+                <li class="text-center d-flex flex-column align-items-center" style="font-size: 30px;">Pranav Kumar A V (107119091)</li>
+                <li class="text-center d-flex flex-column align-items-center" style="font-size: 30px;">Muhilan R (107119073)</li>
+                <li class="text-center d-flex flex-column align-items-center" style="font-size: 30px;">Prethivan B (107119093)</li>
+            </ul>
+        </div>
+        <div style="padding-top: 7.9px;padding-bottom: 2%;">
+            <h4 class="d-flex flex-column" style="margin: 15.1875px;margin-top: 39.6719px;padding: 15.5px;padding-bottom: 0px;margin-bottom: 0px;font-size: 40px;padding-right: 0px;margin-right: 0px;width: 760px;">Date of Submission&nbsp; &nbsp; &nbsp; &nbsp;: 26/4/2021</h4>
+            <h4 class="d-flex flex-column" id="datesub" style="margin: 15.5px;padding: 15.5px;padding-top: 0px;margin-top: 0px;font-size: 40px;margin-bottom: 0px;">Date of Demonstration :</h4>
+        </div>
+    </section>
+    <section style="width: 210mm;height: 297mm;margin-top: 35%;">
+        <h1 style="padding-left: 15.8594px;padding-bottom: 15px;margin-top: 100px;">Output Values :</h1>
+        <h5 id="out1" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">1. Inductance per phase per km in H/km :<br></h5>
+        <h5 id="out2" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">2.&nbsp;Capacitance per phase per km in F/km :<br></h5>
+        <h5 id="out3" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">3. Inductive reactance of the line in Ohm :<br></h5>
+        <h5 id="out4" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">4. Capacitive reactance of the line in Ohm :<br></h5>
+        <h5 id="out5" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">5. Charging current :<br></h5>
+        <h5 id="out6" style="margin-left: 15.8594px;padding-left: 15.8594px;">6. ABCD parameters of the line :<br></h5>
+        <div class="container d-flex flex-column flex-fill" style="padding-top: 10px;padding-bottom: 10px;margin-top: 10px;margin-bottom: 10px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="d-flex justify-content-center" id="outA">A = D =&nbsp;</h5>
+                </div>
+                <div class="col-md-12">
+                    <h5 class="d-flex justify-content-center" id="outB">B =&nbsp;</h5>
+                </div>
+                <div class="col-md-12">
+                    <h5 class="d-flex justify-content-center" id="outC">C =</h5>
+                </div>
+            </div>
+        </div>
+        <h5 id="out7" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-top: 10px;padding-bottom: 10px;">7. Sending end voltage in kV :<br></h5>
+        <h5 id="out8" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">8. Sending end current in A :<br></h5>
+        <h5 id="out9" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">9. Percentage voltage regulation :<br></h5>
+        <h5 id="out10" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">10. Power loss in the line in MW&nbsp;:<br></h5>
+        <h5 id="out11" style="margin-left: 15.8594px;padding-left: 15.8594px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">11. Transmission efficiency&nbsp;:<br></h5>
+        <h5 id="out12" style="margin-left: 15.8594px;padding-left: 15.8594px;padding-bottom: 15px;">12. Sending end circle diagram&nbsp;:<br></h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6><strong><span style="text-decoration: underline;">Label:</span></strong><br>X-AXIS - P(in W)<br>Y-AXIS - Q(in VAR)&nbsp;</h6>
+                </div>
+                <div class="col-md-6">
+                    <h6><strong><span style="text-decoration: underline;">Scale:</span></strong></h6>
+                    <h6 id="scale1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 unit = 10^(7)</h6>
+                </div>
+            </div>
+        </div><center>
+         <canvas id="grid1" width=610 height=610 style="border:1px solid #FF1300; background-color:black;"></canvas>
+    </center>
+        <h6 id="out13" style="margin-left: 15.8594px;padding-left: 15.8594px;padding-bottom: 20px;padding-top: 50px;margin-top: 70px;">13. Receiving end circle diagram&nbsp;:<br></h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6><strong><span style="text-decoration: underline;">Label:</span></strong><br>X-AXIS - P(in W)<br>Y-AXIS - Q(in VAR)&nbsp;</h6>
+                </div>
+                <div class="col-md-6">
+                    <h6><strong><span style="text-decoration: underline;">Scale:</span></strong></h6>
+                    <h6 id="scale2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 unit = 10^(7)</h6>
+                </div>
+            </div>
+        </div><center>
+         <canvas id="grid2" width=610 height=610 style="border:1px solid #FF1300; background-color:black;"></canvas>
+    </center>
+        <h6 id="out14" style="margin-left: 15.8594px;padding-left: 15.8594px;padding-top: 50px;margin-bottom: 30px;">14.&nbsp;Comment on the compensation requirement&nbsp;:<br></h6>
+        <h6 id="out15" style="margin-left: 15.8594px;padding-left: 15.8594px;padding-bottom: 30px;margin-bottom: 30px;">15. Amount of compensation required in MVar :<br></h6>
+    </section><script type="text/javascript">
+     
+            window.onload = function() { window.print(); }
+            window.onafterprint = window.close;
+            
+            var sent = localStorage.getItem("sent");
+            var data = JSON.parse(sent);
+            var out1 = document.getElementById("out1");
+            var out2 = document.getElementById("out2");
+            var out3 = document.getElementById("out3");
+            var out4 = document.getElementById("out4");
+            var out5 = document.getElementById("out5");
+            var out7 = document.getElementById("out7");
+            var out8 = document.getElementById("out8");
+            var out9 = document.getElementById("out9");
+            var out10 = document.getElementById("out10");
+            var out11 = document.getElementById("out11");
+            var outA = document.getElementById("outA");
+            var outB = document.getElementById("outB");
+            var outC = document.getElementById("outC");
+            var scale1 = document.getElementById("scale1");
+            var scale2 = document.getElementById("scale2");
+            var rad = data[13];
+            var cenXS = data[14];
+            var cenYS = data[15];
+            var cenXR = data[16];
+            var cenYR = data[17];
+            var Qnet;
+            var comment;
+            let oDt = new Date();       
+
+
+            // Get full date.
+            let sDate = oDt.getDate() + '/' + (oDt.getMonth() + 1) + '/' + oDt.getFullYear();
+            if(data[18] == 1){
+                Qnet = data[19];
+                comment = data[20];
+                out14.innerHTML = "14. Comment on the compensation requirement : " + comment;
+                out15.innerHTML = "15. Amount of compensation required in MVar : " + Qnet;
+            }
+            else{
+                out14.innerHTML = "" ;
+                out15.innerHTML = "" ;
+            }
+
+
+            out1.innerHTML = "1. Inductance per phase per km in H/km : " + data[0];
+            out2.innerHTML = "2. Capacitance per phase per km in F/km : " + data[1];
+            out3.innerHTML = "3. Inductive reactance of the line in Ohm : " + data[2];
+            out4.innerHTML = "4. Capacitive reactance of the line in Ohm : " + data[3];
+            out5.innerHTML = "5. Charging current : " + data[4];
+            out7.innerHTML = "7. Sending end voltage in kV : " + data[5];
+            out8.innerHTML = "8. Sending end current in A : " + data[6];
+            out9.innerHTML = "9. Percentage voltage regulation : " + data[7];
+            out10.innerHTML = "10. Power loss in the line in MW : " + data[8];
+            out11.innerHTML = "11. Transmission efficiency : " + data[9];
+            outA.innerHTML = "A = D = " + data[10];
+            outB.innerHTML = "B = " + data[11];
+            outC.innerHTML = "C = " + data[12];
+            datesub.innerHTML = "Date of Demonstration : " + sDate;
+
+            var cnv = document.getElementById("grid1");
+            var ctx = cnv.getContext("2d");
+            ctx.fillStyle = "black"; 
+            
+            
+            
+            ctx.beginPath();
+                ctx.moveTo(5,305);
+                ctx.lineTo(605,305);
+                
+            
+                
+                ctx.moveTo(305,5);
+                ctx.lineTo(305,605);
+                          
+            ctx.beginPath();
+            for(var i=5; i<=605; i=i+30)
+            
+            {
+                    ctx.moveTo(i,5);
+                    ctx.lineTo(i,605);
+                    
+                    ctx.moveTo(5,i);
+                    ctx.lineTo(605,i);
+                    
+                    
+            
+            } 
+                           
+             
+            for(var i=5; i<=605; i=i+30)
+                {
+                     ctx.moveTo(i,302);
+                     ctx.lineTo(i,307);
+                     
+                     ctx.moveTo(302,i);
+                     ctx.lineTo(307,i);
+                     
+                     ctx.fillText(((i-5)/30)-10,i-5,315);
+                     ctx.fillText(-((i-5)/30)+10,307,i+5);
+                     
+                 }
+            
+            ctx.strokeStyle="#FF1300";
+            ctx.stroke();
+              
+            
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            RAD = rad.toFixed(3);                          //Radius with respect to axis
+            pow = 0;
+            while (RAD > 10) {
+              RAD = RAD/10;
+              cenXS = cenXS/10;
+              cenYS = cenYS/10;
+              pow +=1;
+            }
+
+            RAD = (RAD)*30;                               //since 1 unit in graph = 30 units in webpage
+            XX = 305 + cenXS*30;
+            YY = 305 - cenYS*30;
+            console.log(XX);
+            ctx.arc(XX, YY, RAD, 0, 2 * Math.PI);
+            ctx.stroke();
+            
+    //////
+    
+    var cnv = document.getElementById("grid2");
+            var ctx = cnv.getContext("2d");
+            ctx.fillStyle = "black"; 
+            
+            
+            
+            ctx.beginPath();
+                ctx.moveTo(5,305);
+                ctx.lineTo(605,305);
+                
+            
+                
+                ctx.moveTo(305,5);
+                ctx.lineTo(305,605);
+                          
+            ctx.beginPath();
+            for(var i=5; i<=605; i=i+30)
+            
+            {
+                    ctx.moveTo(i,5);
+                    ctx.lineTo(i,605);
+                    
+                    ctx.moveTo(5,i);
+                    ctx.lineTo(605,i);
+                    
+                    
+            
+            } 
+                           
+             
+            for(var i=5; i<=605; i=i+30)
+                {
+                     ctx.moveTo(i,302);
+                     ctx.lineTo(i,307);
+                     
+                     ctx.moveTo(302,i);
+                     ctx.lineTo(307,i);
+                     
+                     ctx.fillText(((i-5)/30)-10,i-5,315);
+                     ctx.fillText(-((i-5)/30)+10,307,i+5);
+                     
+                 }
+            
+            ctx.strokeStyle="#FF1300";
+            ctx.stroke();
+              
+            
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            RAD = rad.toFixed(3);                          //Radius with respect to axis
+            pow = 0;
+            while (RAD > 10) {
+              RAD = RAD/10;
+              cenXR = cenXR/10;
+              cenYR = cenYR/10;
+              pow +=1;
+            }
+
+            RAD = (RAD)*30;                               //since 1 unit in graph = 30 units in webpage
+            XX = 305 + cenXR*30;
+            YY = 305 - cenYR*30;
+    
+            ctx.arc(XX, YY, RAD, 0, 2 * Math.PI);
+            ctx.stroke();
+            scale1.innerHTML = scale2.innerHTML = "           1 unit = 10^(" + (6+pow).toString() + ")";
+
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
