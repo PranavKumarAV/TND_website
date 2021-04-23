@@ -293,6 +293,7 @@ load = document.getElementById("load").value;
 pf = document.getElementById("pf").value;
 var VrNL;
 var Rnet = R*len;
+Vr = Vr/math.sqrt(3);                          //Converting Vr to Phase Voltage
 
 
 var numLayers = (3 + ((12*(numStand)-3)**(0.5)))/6;
@@ -317,7 +318,7 @@ var conSGMD = (indSGMD)/((0.7788)**(1/numSub));
 Cap = (2*Math.PI*8.854*(10**(-9)))/(Math.log(MGMD/conSGMD))
 
 Xl = L*2*Math.PI*freq*len;
-Xc = len/(Cap*2*Math.PI*freq);
+Xc = 1/(Cap*len*2*Math.PI*freq);
 Y = math.complex(0,1/Xc);
 Z = math.complex(Rnet,Xl);
 
@@ -354,6 +355,9 @@ if(modelInp == "Short"){
   var real = gammaL.re;
   var img = gammaL.im;
   var temp = math.complex((Math.sinh(real)*Math.cos(img)).toFixed(8),(Math.cosh(real)*Math.sin(img)).toFixed(8));
+  console.log(gammaL);
+  console.log(Z);
+  console.log(Y);
 
   A = math.complex((Math.cosh(real)*Math.cos(img)).toFixed(8),(Math.sinh(real)*Math.sin(img)).toFixed(8));
   B = math.multiply(Zc, temp);
@@ -366,7 +370,6 @@ if(modelInp == "Short"){
 
 Ir = (load*1000)/(math.sqrt(3)*Vr*pf);                               //modulus value
 var IrRect = math.complex(Ir*pf, -1*Ir*Math.sin(Math.acos(pf)));     //Ir in Rectangular form
-Vr = Vr/math.sqrt(3);											     //Converting Vr to Phase Voltage
 Vs = math.add(math.multiply(A,Vr),math.multiply(B,math.divide(IrRect, 1000)));     //Vs in KV and Rectangular form
 VsPolar = Vs.toPolar();                                              //Vs in KV and Polar form
 Is = math.add(math.multiply(C,Vr*1000),math.multiply(A,IrRect));     //Is in A and Rectangular form
@@ -374,8 +377,10 @@ IsPolar = Is.toPolar();                                              //Is in A a
 APolar = A.toPolar();
 VrNL = (VsPolar.r)/(APolar.r);                                    //VrNL in KV and Polar form     
 VReg = ((VrNL - Vr)/Vr)*100;
-PLoss = (3*(IsPolar.r)*(IsPolar.r)*R)/1000;                          //PLoss in KW
-eta = ((load*1000)/(load*1000+PLoss))*100;
+PLoss = (3*(IsPolar.r)*(IsPolar.r)*Rnet)/1000000;                          //PLoss in MW
+den = parseInt(load)+PLoss;
+eta = (load/den)*100;
+
 
 
 out1.innerHTML = "Inductance per phase per km in H/km  <br><br>" +  L.toString();    
