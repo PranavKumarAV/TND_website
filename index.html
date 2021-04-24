@@ -385,7 +385,7 @@ part3Topic.innerHTML = "Sending end Circle Diagram";
 var ctx = cnv.getContext("2d");
 BPolar = B.toPolar(); 
 rad =((VsPolar.r)*(Vr))/(BPolar.r);            //Actual radius
-ang = (BPolar.phi-APolar.phi)*(180/Math.PI);
+ang = (BPolar.phi-APolar.phi);
 cenX = (APolar.r*VsPolar.r*VsPolar.r*Math.cos(ang))/BPolar.r;
 cenY = (APolar.r*VsPolar.r*VsPolar.r*Math.sin(ang))/BPolar.r;
 
@@ -516,6 +516,7 @@ function left3()
         canv2.style.display = "none";
         var ctx = cnv.getContext("2d");
         rad = ((VsPolar.r)*(Vr))/(BPolar.r);            //Actual radius
+	ang = (BPolar.phi-APolar.phi);
         cenX = (APolar.r*VsPolar.r*VsPolar.r*Math.cos(ang))/BPolar.r;
         cenY = (APolar.r*VsPolar.r*VsPolar.r*Math.sin(ang))/BPolar.r;
 
@@ -530,6 +531,7 @@ function right3()
         canv2.style.display = "block";
         var ctx = cnv1.getContext("2d");
         rad = ((VsPolar.r)*(Vr))/(BPolar.r);            //Actual radius
+	ang = (BPolar.phi-APolar.phi);
         cenX = (-1*APolar.r*Vr*Vr*Math.cos(ang))/BPolar.r;
         cenY = (-1*APolar.r*Vr*Vr*Math.sin(ang))/BPolar.r;
 
@@ -544,6 +546,7 @@ function left4()
 function right4()
 {
         var rad = ((VsPolar.r)*(Vr))/(BPolar.r);            //Actual radius
+	ang = (BPolar.phi-APolar.phi);
         var cenX = (-1*APolar.r*Vr*Vr*Math.cos(ang))/BPolar.r;
         var cenY = (-1*APolar.r*Vr*Vr*Math.sin(ang))/BPolar.r;  
         var Q = math.sqrt(rad*rad - (load/3 - cenX)**2) + cenY;
