@@ -394,7 +394,7 @@ var cenYS = cenY;
 var cenXR = (-1*APolar.r*Vr*Vr*Math.cos(ang))/BPolar.r;
 var cenYR = (-1*APolar.r*Vr*Vr*Math.sin(ang))/BPolar.r;
 var Q = math.sqrt(rad*rad - (load/3 - cenXR)**2) + cenYR;
-var Qnet = (load/3)*Math.tan(Math.acos(pf)) - Q;
+var Qnet = Q - (load/3)*Math.tan(Math.acos(pf));
 
 if(Qnet > 0){
 	comment = "Series Inductors can be used for compensation.";
@@ -550,7 +550,7 @@ function right4()
         var cenX = (-1*APolar.r*Vr*Vr*Math.cos(ang))/BPolar.r;
         var cenY = (-1*APolar.r*Vr*Vr*Math.sin(ang))/BPolar.r;  
         var Q = math.sqrt(rad*rad - (load/3 - cenX)**2) + cenY;
-        var Qnet = (load/3)*Math.tan(Math.acos(pf)) - Q;
+        var Qnet = Q - (load/3)*Math.tan(Math.acos(pf));
         out4.innerHTML = "Amount of compensation required in MVar  <br><br>" + Qnet.toString();
 }
 
