@@ -43,6 +43,6 @@ In this project there is also an option to download the results as an report for
 
 Team Members:
 
-Pranav Kumar A V (107119091)
-Prethivan B (107119093)
-Muhilan R (107119073)
+1.Pranav Kumar A V (107119091)
+2.Prethivan B (107119093)
+3.Muhilan R (107119073)
