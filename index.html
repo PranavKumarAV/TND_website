@@ -397,11 +397,11 @@ var Q = math.sqrt(rad*rad - (load/3 - cenXR)**2) + cenYR;
 var Qnet = Q - (load/3)*Math.tan(Math.acos(pf));
 
 if(Qnet > 0){
-	comment = "Series Inductors can be used for compensation.";
+	comment = "Series Inductance can be used for compensation.";
 }else if(Qnet == 0){
 	comment = "No compensation required.";
 }else{
-	comment = "Series Capacitors can be used for compensation.";
+	comment = "Shunt Capacitance can be used for compensation.";
 }
 out4.innerHTML = "Comment on the compensation requirement : <br><br>" + comment;
 dispGraph(ctx, rad, cenX, cenY);
